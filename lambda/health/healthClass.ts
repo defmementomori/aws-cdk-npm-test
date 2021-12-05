@@ -18,7 +18,7 @@ export class HealthAPI {
     this.client = new HealthClient({});
   }
 
-  // 期間中の全イベントを取得
+
   describeEventsForOrganizationAll = async (startTime: Date, endTime: Date) => {
     const command = new DescribeEventsForOrganizationCommand({
       filter: {
@@ -66,13 +66,13 @@ export class HealthAPI {
       : false;
   };
 
-  // 指定のイベントが特定アカウントに紐づくかどうかを判別
+  
   isEventScopeCodeAccoutSpecific = (event: OrganizationEvent) => {
     const eventScopeCode = event.eventScopeCode || "";
     return eventScopeCode === "ACCOUNT_SPECIFIC";
   };
 
-  // 指定のイベントに紐づくAccounIdを取得
+  
   describeAffectedAccountsForOrganizationAll = async (
     event: OrganizationEvent
   ) => {
@@ -91,7 +91,7 @@ export class HealthAPI {
     return accountIds;
   };
 
-  // イベントアカウントが1:Nの関係の場合、1:1となるようeventを整形する
+  
   addAffectedAccounts = (
     event: OrganizationEventWithAccountId,
     accountIds: string[]

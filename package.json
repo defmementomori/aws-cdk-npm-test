@@ -1,27 +1,30 @@
 {
-  "name": "org_health",
+  "name": "aws-cdk-npm-test",
   "version": "0.1.0",
-  "bin": {
-    "org_health": "bin/org_health.js"
-  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
+    "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.10",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.177",
     "@types/node": "10.17.27",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
-    "aws-cdk": "2.0.0",
-    "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
-  },
-  "dependencies": {
     "aws-cdk-lib": "2.0.0",
     "constructs": "^10.0.0",
-    "source-map-support": "^0.5.16"
+    "esbuild": "0",
+    "jest": "^26.4.2",
+    "ts-jest": "26.4.2",
+    "typescript": "~3.9.7"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "2.0.0",
+    "constructs": "^10.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-health": "^3.43.0",
+    "lodash": "^4.17.21"
   }
 }
