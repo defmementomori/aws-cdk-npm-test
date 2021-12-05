@@ -1,6 +1,6 @@
 {
-  "name": "aws-cdk-npm-test",
-  "version": "0.1.0",
+  "name": "@kota.tomi/aws-cdk-npm-test",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -26,5 +26,23 @@
   "dependencies": {
     "@aws-sdk/client-health": "^3.43.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "description": "You should explore the contents of this project. It demonstrates a CDK Construct Library that includes a construct (`AwsCdkNpmTest`) which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defmementomori/aws-cdk-npm-test.git"
+  },
+  "keywords": [
+    "aws"
+  ],
+  "author": "defmementomori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defmementomori/aws-cdk-npm-test/issues"
+  },
+  "homepage": "https://github.com/defmementomori/aws-cdk-npm-test#readme"
 }
